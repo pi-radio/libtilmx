@@ -5,7 +5,12 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++20 -g")
 include_directories(./include)
 
 project(libtilmx VERSION 0.1.0 DESCRIPTION "TI LMXxxxx programming library")
-set(LIBTILMX_SOURCES src/lmx2594.cxx src/lmx2594_config.cxx)
+set(LIBTILMX_SOURCES
+  src/lmx2594.cxx
+  src/lmx2594_config.cxx
+  src/lmx2595_config.cxx
+  src/lmx2820_config.cxx
+  )
 
 set(LIBTILMX_HEADERS
   include/piradio/lmx2594.hpp
