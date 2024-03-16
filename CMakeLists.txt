@@ -5,6 +5,13 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++20 -g")
 include_directories(./include)
 
 project(libtilmx VERSION 0.1.0 DESCRIPTION "TI LMXxxxx programming library")
+
+include(GNUInstallDirs)
+
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+  set(CMAKE_INSTALL_PREFIX "/usr" CACHE PATH "..." FORCE)
+endif()
+
 set(LIBTILMX_SOURCES
   src/lmx2594.cxx
   src/lmx2594_config.cxx
