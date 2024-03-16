@@ -28,7 +28,7 @@ set(LIBTILMX_HEADERS
 
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include")
 
-add_library(tilmx STATIC ${LIBTILMX_SOURCES})
+add_library(tilmx SHARED ${LIBTILMX_SOURCES})
 
 set_target_properties(tilmx PROPERTIES PUBLIC_HEADER "${LIBTILMX_HEADERS}")
 

@@ -147,7 +147,6 @@ namespace piradio
     reg_vals[24] = 0x071A;
     reg_vals[25] = 0x0C2B;
     // Value from ZCU111 programming stuff
-    reg_vals[25] = 0x0624;
     reg_vals[26] = 0x0DB0;
     reg_vals[27] = 0x0002;
     reg_vals[28] = 0x0488;
